@@ -1,0 +1,14 @@
+services:
+  notification-service: 
+    image: virabshetkar/notification-service
+    env_file:
+      - ./docker-compose.env
+    environment:
+      - NODE_ENV=production
+    ports:
+      - 3000:3000
+  mailcatcher-service:
+    image: dockage/mailcatcher
+    ports:
+      - 1025:1025
+      - 1080:1080
