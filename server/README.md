@@ -9,8 +9,8 @@
 
 ### Docker Compose
 
-
 Use the following command to run the service
+
 > Note: Make sure the ports 1080 and 3000 are free.
 
 ```cmd
@@ -42,17 +42,17 @@ npm start
 
 1. `POST` /api/notifications/send-email: To send an email request
 
-    Requires a Notification request object:
+   Requires a Notification request object:
 
-    ```json
-    {
-        "user": {
-            "name": string, // Receiver's Name
-            "email": string  // Receiver's Email
-        },
-        "emailType": string, // Type of email to be sent ["registration", "payment-success", "payment-failure"]
-        "templateData": {
-            ... // Data for the email template Ex: { "name": "John Doe" }
-        }
-    }
-    ```
+   ```json
+   {
+     "user": {
+       "name": "string", // Receiver's Name
+       "email": "string" // Receiver's Email
+     },
+     "emailType": "string", // Type of email to be sent ["registration", "payment-success", "payment-failure"]
+     "templateData": {
+       // Data for the email template Ex: { "name": "John Doe" }
+     }
+   }
+   ```
