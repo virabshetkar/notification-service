@@ -44,7 +44,7 @@ npm start
 
    Requires a Notification request object:
 
-   ```json
+   ```jsonc
    {
      "user": {
        "name": "string", // Receiver's Name
