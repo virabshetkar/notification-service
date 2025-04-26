@@ -25,12 +25,12 @@ Docker compose starts a fake SMTP Server (Mailcatcher) and emails sent can be vi
 
 The following environment variables are needed
 
-1. PORT (Default 3000): Port of the service
-1. MAIL_HOST: Host name of the mail server
-1. MAIL_PORT: Port of the mail server
-1. MAIL_USER: Username of the mail client
-1. MAIL_PASS: Password of the mail client
-1. MAIL_SECURE (Optional): For TLS
+1. `PORT` (Default 3000): Port of the service
+1. `MAIL_HOST`: Host name of the mail server
+1. `MAIL_PORT`: Port of the mail server
+1. `MAIL_USER`: Username of the mail client
+1. `MAIL_PASS`: Password of the mail client
+1. `MAIL_SECURE` (Optional): For TLS
 
 After configuring the environment variables you can run the following command:
 
